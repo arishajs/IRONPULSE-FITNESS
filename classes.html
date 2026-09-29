@@ -1,0 +1,606 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Classes | IronPulse Fitness</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            IRON<span>PULSE</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="membership.html">Membership</a>
+            <a href="classes.html" class="active">Classes</a>
+            <a href="bmi.html">BMI Calculator</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="membership.html" class="join-btn">
+            JOIN NOW
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="classes-hero">
+
+        <div class="hero-content">
+
+            <span>IRONPULSE FITNESS</span>
+
+            <h1>
+                TRAIN WITH
+                <strong>PURPOSE.</strong>
+            </h1>
+
+            <p>
+                High-energy fitness classes designed to challenge
+                your body, build strength and keep you motivated.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="classes-intro">
+
+        <span class="section-tag">
+            OUR CLASSES
+        </span>
+
+        <h2>
+            FIND YOUR
+            <span>PERFECT WORKOUT</span>
+        </h2>
+
+        <p>
+            From intense HIIT sessions to focused strength training,
+            choose a class that matches your fitness goals.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CLASS FILTER ================= -->
+
+    <section class="class-filter">
+
+        <button class="filter-btn active" onclick="filterClasses('all')">
+            ALL
+        </button>
+
+        <button class="filter-btn" onclick="filterClasses('strength')">
+            STRENGTH
+        </button>
+
+        <button class="filter-btn" onclick="filterClasses('cardio')">
+            CARDIO
+        </button>
+
+        <button class="filter-btn" onclick="filterClasses('hiit')">
+            HIIT
+        </button>
+
+        <button class="filter-btn" onclick="filterClasses('mind')">
+            MIND & BODY
+        </button>
+
+    </section>
+
+
+    <!-- ================= CLASSES ================= -->
+
+    <section class="classes-section">
+
+        <div class="class-grid">
+
+
+            <!-- CLASS 1 -->
+
+            <div class="class-card" data-category="strength">
+
+                <div class="class-image strength-class">
+
+                    <span class="level">
+                        INTERMEDIATE
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <span class="class-category">
+                        STRENGTH
+                    </span>
+
+                    <h3>POWER LIFT</h3>
+
+                    <p>
+                        Build raw strength and improve your
+                        lifting technique with structured training.
+                    </p>
+
+                    <div class="class-info">
+
+                        <span>⏱ 60 MIN</span>
+                        <span>🔥 HIGH</span>
+
+                    </div>
+
+                    <div class="class-footer">
+
+                        <div>
+                            <small>TRAINER</small>
+                            <strong>Alex Carter</strong>
+                        </div>
+
+                        <a href="contact.html">
+                            JOIN →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASS 2 -->
+
+            <div class="class-card" data-category="hiit">
+
+                <div class="class-image hiit-class">
+
+                    <span class="level">
+                        ADVANCED
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <span class="class-category">
+                        HIIT
+                    </span>
+
+                    <h3>HIIT BURN</h3>
+
+                    <p>
+                        Fast-paced interval training designed
+                        to burn calories and improve endurance.
+                    </p>
+
+                    <div class="class-info">
+
+                        <span>⏱ 45 MIN</span>
+                        <span>🔥 EXTREME</span>
+
+                    </div>
+
+                    <div class="class-footer">
+
+                        <div>
+                            <small>TRAINER</small>
+                            <strong>Sophia Miller</strong>
+                        </div>
+
+                        <a href="contact.html">
+                            JOIN →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASS 3 -->
+
+            <div class="class-card" data-category="cardio">
+
+                <div class="class-image cardio-class">
+
+                    <span class="level">
+                        BEGINNER
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <span class="class-category">
+                        CARDIO
+                    </span>
+
+                    <h3>CARDIO BLAST</h3>
+
+                    <p>
+                        Improve your cardiovascular fitness with
+                        energetic and effective cardio workouts.
+                    </p>
+
+                    <div class="class-info">
+
+                        <span>⏱ 40 MIN</span>
+                        <span>🔥 MEDIUM</span>
+
+                    </div>
+
+                    <div class="class-footer">
+
+                        <div>
+                            <small>TRAINER</small>
+                            <strong>Ryan Wilson</strong>
+                        </div>
+
+                        <a href="contact.html">
+                            JOIN →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASS 4 -->
+
+            <div class="class-card" data-category="strength">
+
+                <div class="class-image functional-class">
+
+                    <span class="level">
+                        INTERMEDIATE
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <span class="class-category">
+                        STRENGTH
+                    </span>
+
+                    <h3>FUNCTIONAL FIT</h3>
+
+                    <p>
+                        Improve mobility, balance and everyday
+                        strength with functional movements.
+                    </p>
+
+                    <div class="class-info">
+
+                        <span>⏱ 50 MIN</span>
+                        <span>🔥 HIGH</span>
+
+                    </div>
+
+                    <div class="class-footer">
+
+                        <div>
+                            <small>TRAINER</small>
+                            <strong>Daniel Brooks</strong>
+                        </div>
+
+                        <a href="contact.html">
+                            JOIN →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASS 5 -->
+
+            <div class="class-card" data-category="mind">
+
+                <div class="class-image yoga-class">
+
+                    <span class="level">
+                        BEGINNER
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <span class="class-category">
+                        MIND & BODY
+                    </span>
+
+                    <h3>POWER YOGA</h3>
+
+                    <p>
+                        Improve flexibility, balance and mental
+                        focus through powerful yoga sessions.
+                    </p>
+
+                    <div class="class-info">
+
+                        <span>⏱ 55 MIN</span>
+                        <span>🔥 LOW</span>
+
+                    </div>
+
+                    <div class="class-footer">
+
+                        <div>
+                            <small>TRAINER</small>
+                            <strong>Emma Davis</strong>
+                        </div>
+
+                        <a href="contact.html">
+                            JOIN →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLASS 6 -->
+
+            <div class="class-card" data-category="cardio">
+
+                <div class="class-image boxing-class">
+
+                    <span class="level">
+                        ADVANCED
+                    </span>
+
+                </div>
+
+                <div class="class-content">
+
+                    <span class="class-category">
+                        CARDIO
+                    </span>
+
+                    <h3>BOXING CONDITIONING</h3>
+
+                    <p>
+                        Combine boxing techniques with intense
+                        conditioning for a powerful workout.
+                    </p>
+
+                    <div class="class-info">
+
+                        <span>⏱ 60 MIN</span>
+                        <span>🔥 EXTREME</span>
+
+                    </div>
+
+                    <div class="class-footer">
+
+                        <div>
+                            <small>TRAINER</small>
+                            <strong>Marcus Johnson</strong>
+                        </div>
+
+                        <a href="contact.html">
+                            JOIN →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SCHEDULE ================= -->
+
+    <section class="schedule">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                WEEKLY SCHEDULE
+            </span>
+
+            <h2>
+                PLAN YOUR
+                <span>WORKOUT WEEK</span>
+            </h2>
+
+        </div>
+
+
+        <div class="schedule-table">
+
+            <div class="schedule-row schedule-header">
+                <div>DAY</div>
+                <div>CLASS</div>
+                <div>TIME</div>
+                <div>TRAINER</div>
+            </div>
+
+            <div class="schedule-row">
+                <div>MONDAY</div>
+                <div>Power Lift</div>
+                <div>07:00 AM</div>
+                <div>Alex Carter</div>
+            </div>
+
+            <div class="schedule-row">
+                <div>TUESDAY</div>
+                <div>HIIT Burn</div>
+                <div>06:00 PM</div>
+                <div>Sophia Miller</div>
+            </div>
+
+            <div class="schedule-row">
+                <div>WEDNESDAY</div>
+                <div>Cardio Blast</div>
+                <div>08:00 AM</div>
+                <div>Ryan Wilson</div>
+            </div>
+
+            <div class="schedule-row">
+                <div>THURSDAY</div>
+                <div>Functional Fit</div>
+                <div>06:30 PM</div>
+                <div>Daniel Brooks</div>
+            </div>
+
+            <div class="schedule-row">
+                <div>FRIDAY</div>
+                <div>Power Yoga</div>
+                <div>05:30 PM</div>
+                <div>Emma Davis</div>
+            </div>
+
+            <div class="schedule-row">
+                <div>SATURDAY</div>
+                <div>Boxing Conditioning</div>
+                <div>10:00 AM</div>
+                <div>Marcus Johnson</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="classes-cta">
+
+        <div class="cta-content">
+
+            <span>READY TO TRAIN?</span>
+
+            <h2>
+                DON'T JUST WORK OUT.
+                <strong>TRAIN WITH PURPOSE.</strong>
+            </h2>
+
+            <p>
+                Join IronPulse Fitness and discover a stronger,
+                faster and more confident version of yourself.
+            </p>
+
+            <a href="membership.html" class="cta-btn">
+                JOIN IRONPULSE →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <h2>
+                    IRON<span>PULSE</span>
+                </h2>
+
+                <p>
+                    Train Hard. Stay Strong.
+                    Become Unstoppable.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>QUICK LINKS</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="trainers.html">Trainers</a>
+                <a href="classes.html">Classes</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>MEMBERSHIP</h3>
+
+                <a href="membership.html">Membership Plans</a>
+                <a href="bmi.html">BMI Calculator</a>
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>FOLLOW US</h3>
+
+                <div class="social-icons">
+
+                    <a href="#">IG</a>
+                    <a href="#">FB</a>
+                    <a href="#">LI</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 IronPulse Fitness. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+   <script src="app.js"></script>
+
+
+</body>
+</html>
+
